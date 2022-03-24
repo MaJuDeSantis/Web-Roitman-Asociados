@@ -1,0 +1,23 @@
+@import "_variables";
+@import "_utility";
+@import "_globals";
+@import "_header";
+@import "_index";
+@import "_footer";
+@import "_animations";
+@import "_especialidades";
+@import "_contacto";
+@import "_perfil";
+@import "_publicaciones";
+@import "_querys";
+
+
+
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

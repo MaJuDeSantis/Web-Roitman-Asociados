@@ -1,0 +1,39 @@
+.contact-contactInfo{
+    text-align: center;
+    margin-block: 1.8em;
+}
+
+.form{
+    display: inline-block;
+    width: 100%;
+    margin-block: 1.8em;
+}
+
+.form h2{
+    text-align: center;
+}
+
+.form label{
+    border: 1px solid black;
+    padding: .5em;
+    font-weight: bold;
+}
+.form input{
+    border: 1px solid black;
+    padding: .5em;
+}
+form input:last-child{
+    display: inline-block;
+    margin: 1em auto;
+}
+.contact-map{
+    align-items: center;
+}
+.contact-map iframe{
+    width: 100%;
+
+}
+
+.contact-map button{
+    margin: 1em auto;
+}
