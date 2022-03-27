@@ -25,11 +25,16 @@
     text-align: center;
     background: var(--background);
     box-shadow: 8px 8px 16px black;
+
+    & li{
+        display: inline-block;
+        width: 100%;
+    }
 }
-.navigation-bar__menu li{
-    display: inline-block;
-    width: 100%;
-}
+// .navigation-bar__menu li{
+//     display: inline-block;
+//     width: 100%;
+// }
 .menu__link{
     display: inline-block;
     padding: .5em;

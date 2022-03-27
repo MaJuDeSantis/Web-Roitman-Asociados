@@ -79,10 +79,9 @@ footer {
   text-align: center;
   background: var(--background);
   box-shadow: 8px 8px 16px black; }
-
-.navigation-bar__menu li {
-  display: inline-block;
-  width: 100%; }
+  .navigation-bar__menu li {
+    display: inline-block;
+    width: 100%; }
 
 .menu__link {
   display: inline-block;
@@ -216,31 +215,26 @@ footer {
   display: inline-block;
   width: 100%;
   margin-block: 1.8em; }
-
-.form h2 {
-  text-align: center; }
-
-.form label {
-  border: 1px solid black;
-  padding: .5em;
-  font-weight: bold; }
-
-.form input {
-  border: 1px solid black;
-  padding: .5em; }
-
-form input:last-child {
-  display: inline-block;
-  margin: 1em auto; }
+  .form h2 {
+    text-align: center; }
+  .form label {
+    border: 1px solid black;
+    padding: .5em;
+    font-weight: bold; }
+  .form input {
+    border: 1px solid black;
+    padding: .5em; }
+    .form input:last-child {
+      display: inline-block;
+      margin: 1em auto; }
 
 .contact-map {
   align-items: center; }
-
-.contact-map iframe {
-  width: 100%; }
-
-.contact-map button {
-  margin: 1em auto; }
+  .contact-map iframe {
+    width: 100%; }
+  .contact-map button {
+    cursor: pointer;
+    margin: 1em auto; }
 
 .perfil-container {
   text-align: center;
