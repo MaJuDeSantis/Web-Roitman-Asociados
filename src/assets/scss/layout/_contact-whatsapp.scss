@@ -1,0 +1,13 @@
+
+.contact-whatsapp {
+    position:  sticky;
+    cursor: pointer;
+    top: 75vh;
+    left: 90vw;
+
+    @media screen and (max-width:700px) {
+        top: 65vh;
+    //    left: 75vw;
+    }
+
+}

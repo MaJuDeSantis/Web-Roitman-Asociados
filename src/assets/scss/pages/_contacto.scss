@@ -1,0 +1,79 @@
+
+.hero-contacto {
+    @include flex(row,space-between,center);
+    width: 100%;
+    margin-block: 2rem;
+    padding-inline: 5rem;
+    color: $primary-color;
+
+    @media screen and (max-width: 900px) {
+        @include flex(column,space-between,stretch);
+        padding-inline: 1rem;
+    }
+    
+
+    & h1 {
+        margin-block-end: 1.5rem;
+        font-size: 4rem;
+        color: $primary-color-dark;
+
+        @media screen and (max-width: 610px) {
+            font-size: 2.5rem;
+        }
+
+    }
+
+    &__form-container {
+        @include flex(column,flex-start);
+        flex-basis: 60%;
+        font-size: $fs-small;
+        & form {
+            @include flex(column);
+
+
+
+            & input, textarea { 
+                margin-block-end: .8rem;
+                padding: .4rem 1rem;
+
+                resize: none;
+
+                &:focus {
+                    border: 2px solid $primary-color;
+
+                
+                }
+            }
+
+            & input[class="btn"] {
+                width: 50%;
+                cursor: pointer;
+            }
+            
+        }
+    }
+
+    & aside {
+        @include flex(column,center,space-around);
+        flex-basis: 20%;
+        padding: 1rem;
+        border-left: 4px solid $primary-color;
+
+        & h2 {
+            margin-block-end: 1.5rem;
+            font-size: 2rem;
+        }
+
+        & p {
+            margin-block-end: 4rem;
+            font-size: $fs-small;
+            color: $primary-color-light;
+        }
+    }
+
+
+    
+}
+
+
+

@@ -1,0 +1,12 @@
+.btn {
+    background-color: $accent-color;
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px 1px rgba(0, 0, 0, 0.6);
+    color: $light-color;
+    font-size: $fs-small;
+    padding: 1rem 2rem;
+
+    &:hover {
+        border: .5px solid $light-color;
+    }
+}

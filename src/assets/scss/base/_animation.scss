@@ -1,0 +1,36 @@
+@keyframes openMenu {
+        from {
+            transform: translateX(-200%);
+        }
+        to {
+            transform: translateX(0);
+        }
+}
+@keyframes closeMenu {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-200%);
+        }
+}
+
+
+@keyframes openMenuBtn {
+    from {
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(450deg);
+    }
+}
+@keyframes closeMenuBtn {
+    from {
+        transform: rotate(450deg);
+        
+    }
+    100%{
+        transform: rotate(0);
+    }
+}

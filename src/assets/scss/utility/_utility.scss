@@ -1,0 +1,29 @@
+/* Utility*/
+
+
+.activepage{
+    @media screen and (min-width: $monitor){
+        font-weight: bolder;
+        border-radius: 4px;
+        background-color: $light-color;
+        color: $primary-color !important;
+
+    }
+
+    
+ }
+
+
+.wrapper{
+    max-width: $lg-monitor;
+    margin: 0 auto;
+    padding-inline: 1rem;
+    @media screen and (min-width: $monitor){
+        padding-inline: 2rem;
+    }
+}
+
+
+.not-active{
+    display:  none;
+}

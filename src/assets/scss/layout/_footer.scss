@@ -1,0 +1,39 @@
+
+footer {
+    border-top: 6px solid $primary-color;
+    padding-block: 1rem;
+}
+
+.footerbar {
+    @include flex (row, space-between, center);
+
+    &__contact-info {
+        @include flex (column);
+        font-size: $fs-small - .2rem;
+        color: $primary-color;
+        font-weight: bold;
+    }
+
+    & .social-links {
+        @include flex (row, space-between , center, 2rem);
+    }
+
+
+    @media screen and (max-width: 680px) {
+        @include flex (column);
+        &__contact-info {
+            text-align: center;
+            font-size: .9rem;
+        }
+
+        & .social-links {
+            @include flex (row, space-between , center);
+        }
+
+    }
+    
+    
+
+    
+}
+

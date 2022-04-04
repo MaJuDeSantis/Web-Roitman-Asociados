@@ -1,0 +1,79 @@
+
+.hero {
+    @include flex (column, center,center);
+    margin-inline: 5rem;
+    
+
+    &__welcome-title {
+        max-width: 20ch;
+        margin-block-end: 2rem;
+        font-size: $fs-Xlarge;
+        font-family: $font-secondary;
+        font-weight: 700;
+        line-height: .8;
+        color: $primary-color-dark;
+        text-align: center;
+    }
+
+    &__welcome-info {
+        margin-block-end: 2rem;
+        max-width: 50ch;
+        font-size: $fs-medium - .2rem;
+        font-weight: 400;
+        color: $primary-color-light;
+        text-align: center;
+    }
+
+    &__welcome-btn {
+
+        margin-block-start: 2rem;
+
+    }
+
+    
+}
+
+.index-contacto__container {
+    background-color: $primary-color;
+}
+
+@media screen and (max-width:1023px) {
+    .hero {
+
+        &__welcome-title {
+            font-size: 4rem;
+        }
+        &__welcome-info {
+            font-size: 1.5rem;
+        }
+    }
+    
+}
+@media screen and (max-width:700px) {
+    .hero {
+        margin-block: 2rem;
+        margin-inline: 3rem;
+
+
+        &__welcome-title {
+            font-size: 3rem;
+        }
+        &__welcome-info {
+            font-size: 1.25rem;
+        }
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .hero {
+        margin-inline: 1rem;
+
+        &__welcome-title {
+            font-size: 2.5rem;
+        }
+        &__welcome-info {
+            font-size: 1rem;
+        }
+    }
+    
+}
