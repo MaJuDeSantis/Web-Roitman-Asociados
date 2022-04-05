@@ -1,0 +1,37 @@
+
+.hero-especialidades {
+    margin-block: 2rem;
+    text-align: center;
+    
+
+    & h1 {
+        font-size: $fs-Xlarge;
+        color: $primary-color-dark;
+        margin-block: 2rem;
+    }
+}
+
+.cards-container {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    
+
+    &__card {
+        @include flex(column,space-between,strech);
+        
+
+        & h2 {
+            background-color: $primary-color;
+            color: $light-color;
+            height: 5rem;
+            font-size: $fs-medium;
+        }
+
+        & img {
+            flex: 1;
+            width: 80%;
+        }
+    }
+}

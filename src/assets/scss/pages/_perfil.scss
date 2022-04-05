@@ -1,0 +1,72 @@
+
+.hero-perfil {
+    @include flex(row,space-around,center,2rem);
+    width: 100%;
+    margin-block: 2rem;
+    padding-inline: 5rem;
+    color: $primary-color;
+
+    @media screen and (max-width:1200px) {
+        padding-inline: 2.5rem;
+    }
+    @media screen and (max-width:1024px) {
+        @include flex(column,space-around,center,2rem);
+    }
+    @media screen and (max-width:800px) {
+        padding-inline: 1.5rem;
+    }
+
+    &__presentation {
+        @include flex(column,flex-start,center,2rem);
+        text-align: center;
+        & h1 {
+            font-size: $fs-large;
+            color: $primary-color-dark;
+            border-bottom: 4px solid $accent-color;
+            font-weight: bolder;
+            line-height: .8;
+
+            @media screen and (max-width:800px) {
+                font-size: 2.5rem; 
+            }
+
+            @media screen and (max-width:500px) {
+                font-size: 2rem; 
+            }
+        }
+        & img {
+            width: 60%;
+           
+        }
+        & h2 {
+            font-size: 1.5rem;
+            @media screen and (max-width:500px) {
+                font-size: 1.5rem; 
+            }
+            @media screen and (max-width:800px) {
+                font-size: 1rem; 
+            }
+        }
+
+    }
+
+    &__history { 
+
+        & p {
+            width: 60ch;
+            font-size: $fs-small;
+            color: $primary-color-light;
+            line-height: 1.6;
+
+            @media screen and (max-width:800px) {
+                width: 100%;
+            }
+            @media screen and (max-width:500px) {
+                font-size: .8rem;
+            }
+
+            
+        }
+    }
+    
+}
