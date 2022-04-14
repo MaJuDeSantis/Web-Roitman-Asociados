@@ -37,7 +37,11 @@ header {
                 transform: scaleX(0);
                 transition: transform .3s ease-in-out;
             }
-            &:hover::before {
+            // &:hover::before {
+            //     transform-origin: left;
+            //     transform: scaleX(1);
+            // }
+            &:hover:not([class="activepage"])::before{
                 transform-origin: left;
                 transform: scaleX(1);
             }
